@@ -15,16 +15,6 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 @Import({ BookController.class, StatusController.class})
 public class SpringbootdeploymentsApplication {
 
-	@Bean
-	public HandlerMapping handlerMapping() {
-		return new RequestMappingHandlerMapping();
-	}
-
-	@Bean
-	public HandlerAdapter handlerAdapter() {
-		return new RequestMappingHandlerAdapter();
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootdeploymentsApplication.class, args);
 	}
